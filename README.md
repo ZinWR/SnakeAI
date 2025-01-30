@@ -8,3 +8,8 @@ Area of Machine Learning how software agents take actions in an environment in o
 
 ### Deep Q Learning
 Extends Reinforcement Learning by using a deep neural network to predict actions.
+
+## Tech Stacks
+- Python/Pygame (Game)
+- Agent (for ML training)
+- Pytorch (Model)
