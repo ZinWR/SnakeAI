@@ -8,6 +8,9 @@ class SnakeGame:
         self.width = width
         self.height = height
         # Display Init
+        self.display = pygame.display.set_mode((self.width, self.height))
+        pygame.display.set_caption('Snake')
+        self.clock = pygame.time.Clock()
 
         # Game State Init
 
