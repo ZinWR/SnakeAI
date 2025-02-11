@@ -43,6 +43,12 @@ class SnakeGame:
             self._place_food()
 
     def play_step(self):
+        # 1. Collect user input
+        # 2. Move
+        # 3. Check if game over
+        # 4. Place new food or just move
+        # 5. Update UI & clock
+        # 6. Return update (game over & score)
         pass
 
 if __name__ == '__main__':
