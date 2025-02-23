@@ -49,16 +49,19 @@ class SnakeGame:
         # 4. Place new food or just move
         # 5. Update UI & clock
         # 6. Return update (game over & score)
-        pass
+        game_over = False
+        return game_over, self.score
 
 if __name__ == '__main__':
     game = SnakeGame()
 
     # Game Loop
     while True:
-        game.play_step()
+        game_over, score = game.play_step()
 
         # Break if Game Over
-        pass
+        if game_over == True:
+            break
 
+    print('Final Score', score)
     pygame.quit()
