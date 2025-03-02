@@ -6,6 +6,16 @@ from collections import namedtuple
 pygame.init()
 font = pygame.font.Font('arial.ttf', 25)
 
+# AI Agent Implementation Reiteration
+
+
+# TODO: build out these
+# reset 
+# reward
+# play(action) -> direction
+# game_iteration
+# is_collision
+
 class Direction(Enum):
     RIGHT = 1
     LEFT = 2
