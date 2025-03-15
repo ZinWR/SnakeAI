@@ -95,6 +95,12 @@ class Agent:
         if random.randint(0,200) < self.epsilon:
             move = random.randint(0,2)
             final_move[move] = 1
+        else:
+            state0 = torch.tensor(state, dtype=torch.float)
+            prediction = self.model.predict(state0)
+            move = torch.argmax(prediction).item()
+            final_move[move] = 1
+        return final_move
 
 def train():
     plot_scores = []
