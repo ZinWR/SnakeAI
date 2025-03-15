@@ -14,3 +14,20 @@ class Linear_QNet(nn.Module):
         x = F.relu(self.linear1(x)) # Activation Func
         x = self.linear2(x)
         return x
+    
+    def save(self, file_name='model.pth'):
+        model_folder_path = './model'
+        if not os.path.exists(model_folder_path):
+            os.makedirs(model_folder_path)
+
+        file_name = os.path.join(model_folder_path, file_name)
+        torch.save(self.state_dict(), file_name)
+
+class QTrainer:
+    def __init__(self, model, lr, gamma): # lr is learning_rate
+        self.model = model
+        self.lr = lr
+        self.gamma = gamma
+        self.optimizer = optim.Adam(model.parameters(), lr=self.lr)
+        # Loss function
+        self.criterion = nn.MSELoss()
