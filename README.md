@@ -1,15 +1,25 @@
-# Snake AI
-Using Reinforcement Learning to train AI to play Snake Game
+# Snake AI with Reinforcement Learning
+Teaching myself how to train AI to play Snake Game
 
-## Reinforcement Learning
-Area of Machine Learning how software agents take actions in an environment in order to maximize the notion of cummulative reward.
+## How to Run
+```
+python agent.py
+```
 
-`Telling it how good it is DOING!`
-
-### Deep Q Learning
-Extends Reinforcement Learning by using a deep neural network to predict actions.
+## Demo
+<div align="center">
+    <p>Running the app:</p>
+    <img alt="Gameplay" src="demo.gif" width="60%" height="auto">
+</div>
 
 ## Tech Stacks
 - Python/Pygame (Game)
 - Agent (for ML training)
 - Pytorch (Model)
+
+## Lesson & Challenges
+- Working with Pytorch and training a model is pretty challenging given my skillset (for now).
+- Training can take super long (which is expected).
+- Agent logic is fairly straight forward for a snake game so implementation was pretty easy.
+- Learning Pytorch framework takes times and I love it.
+
